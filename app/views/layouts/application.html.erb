@@ -10,6 +10,60 @@
   </head>
 
   <body>
+    <header id="site-header" class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand animation" href="#home" data-animation="fadeInDown" data-animation-delay="0.2s">
+          <div>
+            <img src="https://res.cloudinary.com/overdrive/image/upload/v1548184892/images/norcon/logo.png" height="64" alt="Norcon">
+          </div>
+          <div class="d-flex flex-column justify-content-center ml-3">
+            <h1>Norcon Chico</h1>
+            <small>April 13, 2019</small>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link animation" href="#home" data-animation="fadeInDown" data-animation-delay="0.3s">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.4s" href="#speakers">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.5s" href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.6s" href="#location">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.7s" href="#sponsors">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.8s" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
     <%= yield %>
+    <footer class="page-footer bg-dark">
+      <div class="info">
+        <div>© 2019 Copyright Norcon Chico<a href="mailto:info@raidatech.com">info@norcon.io</a></div>
+      </div>
+      <div class="info">
+        <div>Website Designed by <a href="https://github.com/overdrivemachines">Dipen Chauhan</a></div>
+
+      </div>
+      <a href="#home" id="back-to-top">
+     
+    <i class="fa fa-arrow-circle-up"></i>
+     
+    </a>
+    </footer>
   </body>
 </html>
