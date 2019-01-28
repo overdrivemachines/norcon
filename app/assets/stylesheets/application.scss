@@ -161,7 +161,8 @@ h6,
   overflow: hidden;
   position: relative;
   // background-image: url(http://xerotheme.com/keyra/01_theme/html/img/banner.jpg);
-  background-image: url(https://res.cloudinary.com/overdrive/image/upload/v1548360189/images/norcon/los-angeles.jpg);
+  // background-image: url(https://res.cloudinary.com/overdrive/image/upload/v1548360189/images/norcon/los-angeles.jpg);
+  background: image-url('bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
