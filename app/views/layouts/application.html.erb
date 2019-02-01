@@ -58,27 +58,53 @@
               <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.5s" href="#schedule">Schedule</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.6s" href="#location">Location</a>
+              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.6s" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.7s" href="#sponsors">Sponsors</a>
+              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.7s" href="#location">Location</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.8s" href="#about">About</a>
+              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.8s" href="#sponsors">Sponsors</a>
             </li>
           </ul>
         </div>
-
       </nav>
     </header>
     <%= yield %>
-    <footer class="page-footer bg-dark">
-      <div class="info">
-        <div>© 2019 Copyright Norcon Chico<a href="mailto:info@raidatech.com">info@norcon.io</a></div>
-      </div>
-      <div class="info">
-        <div>Website Designed by <a href="https://github.com/overdrivemachines">Dipen Chauhan</a></div>
-
+    <footer id="site-footer" class="bg-dark">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-md-2">
+            <h1>Norcon Chico</h1>
+            <small>April 13, 2019</small>
+            <address>
+              <a href="#">Idea Fab Labs</a>
+              603 Orange St <br>
+              Chico, CA 95926
+            </address>
+          </div>
+          <div class="col-md-2">
+            <a href="index#home">
+              <img src="https://res.cloudinary.com/overdrive/image/upload/v1548184892/images/norcon/logo.png" height="92" alt="Norcon">
+            </a>
+          </div>
+          <div>
+            <div class="info">
+              <div>© 2019 Copyright Norcon <a href="mailto:info@raidatech.com">info@norcon.io</a></div>
+            </div>
+            <nav>
+              <a href="/">Home</a>
+              <a href="speakers">Speakers</a>
+              <a href="schedule">Schedule</a>
+              <a href="location">Location</a>
+              <a href="#sponsors">Sponsors</a>
+              <a href="mailto:info@norcon.io">Contact</a>
+            </nav>
+            <div class="info">
+              <div>Website Designed by <a href="https://github.com/overdrivemachines">Dipen Chauhan</a></div>
+            </div>
+          </div>
+        </div>
       </div>
       <a href="#home" id="back-to-top">
      

@@ -23,6 +23,10 @@
 // https://marksheet.io/sass-variables.html
 // https://www.semrush.com/blog/semantic-html5-guide/
 // https://terminal.sexy/#Jygi-PjyJygi-SZypuIu9L91ZtnvroH_oe_k-PjydXFe-SZypuIu9L91ZtnvroH_oe_k-fj1
+// https://thememakker.com/templates/aero/html/index.html#dark
+// http://innovationplans.com/themeforest/sodic/
+// https://www.cssfilters.co/
+// http://xerotheme.com/keyra/01_theme/html/index.html
 $(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 200) {
