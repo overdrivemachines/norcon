@@ -33,7 +33,7 @@
   <body>
     <header id="site-header" class="fixed-top">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand animation" href="#home" data-animation="fadeInDown" data-animation-delay="0.2s">
+        <a class="navbar-brand animated fadeInDown" href="#home">
           <div>
             <img src="https://res.cloudinary.com/overdrive/image/upload/v1548184892/images/norcon/logo.png" height="64" alt="Norcon">
           </div>
@@ -44,27 +44,38 @@
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbar-content">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link animation" href="#home" data-animation="fadeInDown" data-animation-delay="0.3s">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link animated fadeInDown" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle animated fadeInDown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Speakers
+            </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="speakers">Current Speakers</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">2018 Speakers</a>             
+                <a class="dropdown-item" href="#">2017 Speakers</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.4s" href="#speakers">Speakers</a>
+              <a class="nav-link animated fadeInDown" href="/schedule">Schedule</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.5s" href="#schedule">Schedule</a>
+              <a class="nav-link animated fadeInDown" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.6s" href="#about">About</a>
+              <a class="nav-link animated fadeInDown" href="#location">Location</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.7s" href="#location">Location</a>
+              <a class="nav-link animated fadeInDown" href="#sponsors">Sponsors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link animation" data-animation="fadeInDown" data-animation-delay="0.8s" href="#sponsors">Sponsors</a>
+              <a class="nav-link animated fadeInDown" href="#sponsors">Party</a>
             </li>
           </ul>
         </div>
@@ -74,7 +85,7 @@
     <footer id="site-footer" class="bg-dark">
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-12 text-center">
             <h1>Norcon Chico</h1>
             <small>April 13, 2019</small>
             <address>
@@ -83,12 +94,12 @@
               Chico, CA 95926
             </address>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-12 text-center">
             <a href="index#home">
               <img src="https://res.cloudinary.com/overdrive/image/upload/v1548184892/images/norcon/logo.png" height="92" alt="Norcon">
             </a>
           </div>
-          <div>
+          <div class="text-center">
             <div class="info">
               <div>© 2019 Copyright Norcon <a href="mailto:info@raidatech.com">info@norcon.io</a></div>
             </div>
@@ -107,10 +118,8 @@
         </div>
       </div>
       <a href="#home" id="back-to-top">
-     
-    <i class="fa fa-arrow-circle-up"></i>
-     
-    </a>
+        <i class="fa fa-arrow-circle-up"></i> 
+      </a>
     </footer>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125974527-2"></script>
