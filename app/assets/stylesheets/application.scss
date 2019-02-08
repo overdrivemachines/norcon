@@ -168,6 +168,12 @@ h6,
   }
 }
 
+@for $i from 1 through 10 {
+  .nav-item:nth-child(#{$i}n) .nav-link {
+    animation-delay: #{($i * 0.1) + 0.1}s;
+  }
+}
+
 /*===================================*
 03. HOME
 *===================================*/
@@ -250,12 +256,21 @@ h6,
   background: url(https://res.cloudinary.com/overdrive/image/upload/v1548704128/images/norcon/ifl.jpg)
     bottom center no-repeat;
   background-size: 100% auto;
-  height: 700px;
+  // height: 700px;
+  
+  .bg {
+    display: none;
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .about-location {
   padding: 2.5em;
   margin-top: 20%;
+  margin-bottom: 20%;
   background: #000;
   background: #313131;
   border-radius: 10px;
@@ -284,6 +299,31 @@ h6,
   p {
     margin-top: 0.5em;
     margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .about-location {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #location {
+    background: none;
+    
+    .bg {
+      display: block;
+    }
+  }
+}
+/* On screens that are 600px or less, set the background color to blue */
+@media only screen and (max-width: 600px) {
+  #location {
+    height: auto;
+  }
+  .about-location {
+    padding: 1em;
+    margin: 1em;
   }
 }
 
@@ -383,6 +423,101 @@ h6,
     max-width: 200px;
   }
 }
+
+/*===================================*
+08. SPEAKERS
+*===================================*/
+#speakers {
+  height: 100%;
+  .outer-container {
+    background: linear-gradient(
+        -45deg,
+        rgba(207, 215, 8, 0.9) 0%,
+        rgba(255, 54, 8, 0.9) 100%
+      ),
+      url(https://rubyconf.org/img/program-header.jpg) center center no-repeat;
+    background: linear-gradient(
+        -45deg,
+        rgba(207, 215, 8, 0.9) 0%,
+        rgba(255, 54, 8, 0.9) 100%
+      ),
+      url(https://image.freepik.com/free-photo/rear-view-audience-conference-hall-seminar-meeting_41418-2958.jpg)
+        center center no-repeat;
+    background: linear-gradient(
+        -45deg,
+        rgba(0, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 100%
+      ),
+      url(https://busyconf.com/blog/images/2013-05-27-speaker.jpg) center center
+        no-repeat;
+    
+    background: radial-gradient(
+        ellipse farthest-side at 100% 100%,
+        rgba(90, 46, 123, 0.9) 20%,
+        rgba(146, 71, 162, 0.9) 50%,
+        rgba(102, 102, 187, 0.9) 110%
+      ),
+      url(https://image.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg)
+        center center no-repeat;
+    
+    background-size: auto, 100%, 100% auto;
+    
+    padding-bottom: 3em;
+  }
+  .container {
+    padding-top: 75px;
+  }
+  
+  h2.title {
+    font-family: "Fjalla One";
+    text-transform: uppercase;
+    font-size: 48px;
+    // color: #ff88ab;
+    // color: $green;
+    // padding: 0 0 10px 0;
+    // margin: 0;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+}
+
+.speaker {
+  display: flex;
+  align-items: center;
+  padding: 3em;
+  margin-bottom: 3em;
+  background: #000;
+  background: #313131;
+  border-radius: 10px;
+  border: 1px solid #1A1612;
+  box-shadow: 0 3px 7px rgba(52,73,94,0.07);
+  box-shadow: 0 3px 7px rgba(80,71,63,0.07);
+  .info {
+  padding-right: 2em;
+
+    h2 {
+      font-family: "Fjalla One";
+      text-transform: uppercase;
+      font-size: 32px;
+      color: #ff88ab;
+      color: $green;
+      padding: 0 0 10px 0;
+      margin: 0;
+    }
+
+    a {
+      display: block;
+      padding-bottom: 0.5em;
+      font-size: 1.2em;
+      color: $light-yellow;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: $green;
+    }
+  }
+}
+
 
 /*FOOTER*/
 
