@@ -2,9 +2,6 @@ class WelcomeController < ApplicationController
   def index
   end
 
-  def speakers
-  end
-
   def location
   end
 
