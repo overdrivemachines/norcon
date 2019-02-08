@@ -56,10 +56,10 @@
               Speakers
             </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="speakers">Current Speakers</a>
+                <%= link_to "Current Speakers", speakers_index_path, class: "dropdown-item" %>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="speakers/2018">2018 Speakers</a>             
-                <a class="dropdown-item" href="speakers/2017">2017 Speakers</a>
+                <%= link_to "2018 Speakers", speakers_2018_path, class: "dropdown-item" %>
+                <%= link_to "2017 Speakers", speakers_2017_path, class: "dropdown-item" %>
               </div>
             </li>
             <li class="nav-item">
