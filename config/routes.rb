@@ -3,6 +3,7 @@
 #                    Prefix Verb URI Pattern                                                                              Controller#Action
 #                      root GET  /                                                                                        welcome#index
 #                     index GET  /index(.:format)                                                                         welcome#index
+#                  speakers GET  /speakers(.:format)                                                                      speakers#index
 #            speakers_index GET  /speakers/index(.:format)                                                                speakers#index
 #             speakers_2018 GET  /speakers/2018(.:format)                                                                 speakers#speakers_2018
 #             speakers_2017 GET  /speakers/2017(.:format)                                                                 speakers#speakers_2017
@@ -19,6 +20,7 @@ Rails.application.routes.draw do
   # TODO
   # get 'welcome/party'
 
+  get 'speakers', to: 'speakers#index'
   get 'speakers/index'
   get 'speakers/2018', to: 'speakers#speakers_2018'
   get 'speakers/2017', to: 'speakers#speakers_2017'
