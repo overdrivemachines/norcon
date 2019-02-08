@@ -35,7 +35,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand animated fadeInDown" href="#home">
           <div>
-            <img src="https://res.cloudinary.com/overdrive/image/upload/v1548184892/images/norcon/logo.png" height="64" alt="Norcon">
+            <%= image_tag("logo.png", height: '64') %>
           </div>
           <div class="d-flex flex-column justify-content-center ml-3">
             <h1>Norcon Chico</h1>
@@ -49,7 +49,7 @@
         <div class="collapse navbar-collapse" id="navbar-content">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link animated fadeInDown" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link animated fadeInDown" href="index#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle animated fadeInDown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,29 +58,27 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="speakers">Current Speakers</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">2018 Speakers</a>             
-                <a class="dropdown-item" href="#">2017 Speakers</a>
+                <a class="dropdown-item" href="speakers/2018">2018 Speakers</a>             
+                <a class="dropdown-item" href="speakers/2017">2017 Speakers</a>
               </div>
             </li>
             <li class="nav-item">
               <a class="nav-link animated fadeInDown" href="/schedule">Schedule</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link animated fadeInDown" href="#about">About</a>
+              <a class="nav-link animated fadeInDown" href="index#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link animated fadeInDown" href="#location">Location</a>
+              <a class="nav-link animated fadeInDown" href="index#location">Location</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link animated fadeInDown" href="#sponsors">Sponsors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link animated fadeInDown" href="#sponsors">Party</a>
+              <a class="nav-link animated fadeInDown" href="index#sponsors">Sponsors</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+    <div id="top"></div>
     <%= yield %>
     <footer id="site-footer" class="bg-dark">
       <div class="container">
@@ -96,20 +94,20 @@
           </div>
           <div class="col-md-2 col-sm-12 text-center">
             <a href="index#home">
-              <img src="https://res.cloudinary.com/overdrive/image/upload/v1548184892/images/norcon/logo.png" height="92" alt="Norcon">
+              <%= image_tag("logo.png", height: '92') %>
             </a>
           </div>
           <div class="text-center">
             <div class="info">
-              <div>© 2019 Copyright Norcon <a href="mailto:info@raidatech.com">info@norcon.io</a></div>
+              <div>© 2019 Copyright Norcon <a href="mailto:info@raidatech.com">info@chicostart.com</a></div>
             </div>
             <nav>
               <a href="/">Home</a>
               <a href="speakers">Speakers</a>
               <a href="schedule">Schedule</a>
-              <a href="location">Location</a>
-              <a href="#sponsors">Sponsors</a>
-              <a href="mailto:info@norcon.io">Contact</a>
+              <a href="index#location">Location</a>
+              <a href="index#sponsors">Sponsors</a>
+              <a href="mailto:info@chicostart.com">Contact</a>
             </nav>
             <div class="info">
               <div>Website Designed by <a href="https://github.com/overdrivemachines">Dipen Chauhan</a></div>
@@ -117,7 +115,7 @@
           </div>
         </div>
       </div>
-      <a href="#home" id="back-to-top">
+      <a href="#top" id="back-to-top">
         <i class="fa fa-arrow-circle-up"></i> 
       </a>
     </footer>
