@@ -183,9 +183,9 @@ h6,
   overflow: hidden;
   position: relative;
   // background-image: url(http://xerotheme.com/keyra/01_theme/html/img/banner.jpg);
-  background-image: url(https://res.cloudinary.com/overdrive/image/upload/v1548360189/images/norcon/los-angeles.jpg);
-  background-image: url(https://farm5.staticflickr.com/4637/39012752531_1054163d08_k_d.jpg);
-  background-image: url(https://res.cloudinary.com/overdrive/image/upload/v1548486865/images/norcon/bg.jpg);
+  // background-image: url(https://res.cloudinary.com/overdrive/image/upload/v1548360189/images/norcon/los-angeles.jpg);
+  // background-image: url(https://farm5.staticflickr.com/4637/39012752531_1054163d08_k_d.jpg);
+  background-image: image-url('bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -253,7 +253,7 @@ h6,
 *===================================*/
 #location {
   width: 100%;
-  background: url(https://res.cloudinary.com/overdrive/image/upload/v1548704128/images/norcon/ifl.jpg)
+  background: image-url('ifl.jpg')
     bottom center no-repeat;
   background-size: 100% auto;
   // height: 700px;
@@ -336,7 +336,7 @@ h6,
   padding-right: 3.5em;
 
   .bg-container {
-    background: url(https://res.cloudinary.com/overdrive/image/upload/v1548817711/images/norcon/chico_collage.png)
+    background: image-url('chico_collage.png')
       right bottom no-repeat;
     background-size: 1170px auto;
     padding: 0 0 620px 0;
@@ -360,7 +360,7 @@ h6,
   padding-bottom: 4.5em;
 
   .bg-container {
-    background: url(https://res.cloudinary.com/overdrive/image/upload/v1548818520/images/norcon/bidwell.jpg)
+    background: image-url('bidwell.jpg')
       center bottom no-repeat;
     background-size: 100% auto;
     padding: 0 0 500px 0;
@@ -429,35 +429,14 @@ h6,
 *===================================*/
 #speakers {
   height: 100%;
-  .outer-container {
-    background: linear-gradient(
-        -45deg,
-        rgba(207, 215, 8, 0.9) 0%,
-        rgba(255, 54, 8, 0.9) 100%
-      ),
-      url(https://rubyconf.org/img/program-header.jpg) center center no-repeat;
-    background: linear-gradient(
-        -45deg,
-        rgba(207, 215, 8, 0.9) 0%,
-        rgba(255, 54, 8, 0.9) 100%
-      ),
-      url(https://image.freepik.com/free-photo/rear-view-audience-conference-hall-seminar-meeting_41418-2958.jpg)
-        center center no-repeat;
-    background: linear-gradient(
-        -45deg,
-        rgba(0, 255, 255, 0.9) 0%,
-        rgba(255, 255, 255, 0.9) 100%
-      ),
-      url(https://busyconf.com/blog/images/2013-05-27-speaker.jpg) center center
-        no-repeat;
-    
+  .outer-container {    
     background: radial-gradient(
         ellipse farthest-side at 100% 100%,
         rgba(90, 46, 123, 0.9) 20%,
         rgba(146, 71, 162, 0.9) 50%,
         rgba(102, 102, 187, 0.9) 110%
       ),
-      url(https://image.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg)
+      image-url('business_meeting.jpg')
         center center no-repeat;
     
     background-size: auto, 100%, 100% auto;
