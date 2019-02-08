@@ -2,12 +2,11 @@
   <section id="home">
     <div class="container">
       <div class="row">
-        <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 text-center logo-container animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+        <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 text-center logo-container animated fadeInUp">
           <h1>Norcon</h1>
           <h2>Chico</h2>
           <h3>2019</h3>
-          <img src="https://res.cloudinary.com/overdrive/image/upload/v1548184892/images/norcon/logo.png" alt="Norcon" height="256">
-          <p class="lead mb-4 animated fadeInUp"></p>
+          <%= image_tag("logo.png", height: '256') %>
         </div>
       </div>
     </div>
@@ -24,6 +23,9 @@
 
   </section>
   <section id="location">
+    <div class="bg">
+      <%= image_tag 'ifl.jpg' %>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6 about-location animation" data-animation="fadeInUp" data-animation-delay="0.2">
@@ -45,7 +47,7 @@
         <div class="row">
           <div class="col-md-6">
             <h2 class="title animation" data-animation="fadeInUp" data-animation-delay="0.2">What makes Norcon so Special?</h2>
-            <p class="animation" data-animation="fadeInUp" data-animation-delay="0.3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempora, totam, eius ab alias minima quasi similique dicta magni inventore doloremque saepe assumenda minus odio expedita nesciunt cupiditate repellat vitae?</p>
+            <p class="animation" data-animation="fadeInUp" data-animation-delay="0.3">Entering its 4th year Norcon has grown</p>
           </div>
         </div>
       </div>
@@ -62,30 +64,24 @@
               <h3 class="animation" data-animation="fadeInUp" data-animation-delay="0.4"><em>Gold</em></h3>
               <div class="animation" data-animation="fadeInUp" data-animation-delay="0.5">
                 <a target="_blank" href="https://chicostart.com/"><img alt="Chico Start" src="https://res.cloudinary.com/overdrive/image/upload/v1548901481/images/norcon/chicostart_logo.png"></a>
-                <a target="_blank" href="https://growtech.io/"><img alt="Growtech" src="https://res.cloudinary.com/overdrive/image/upload/v1548901481/images/norcon/growtech_logo.png"></a>
-                <a target="_blank" href="https://chico.ideafablabs.com/"><img alt="Idea Fab Labs" src="https://res.cloudinary.com/overdrive/image/upload/v1548901481/images/norcon/ifl_logo.png"></a>
+                <a target="_blank" href="https://growtech.io/">
+                  <%= image_tag "sponsors/growtech_logo.png" %>
+                </a>
+                <a target="_blank" href="https://chico.ideafablabs.com/">
+                  <%= image_tag "sponsors/ifl_logo.png" %>
+                </a>
               </div>
             </div>
             <div id="silver-sponsors" class="list">
               <h3 class="animation" data-animation="fadeInUp" data-animation-delay="0.6"><em>Silver</em></h3>
               <div class="animation" data-animation="fadeInUp" data-animation-delay="0.7">
-                <a target="_blank" href="https://www.heroku.com/"><img alt="Heroku" src="https://railsconf-test.s3.amazonaws.com/uploads/Heroku_-_shorter_cropped.png"></a>
-                <a target="_blank" href="https://checkr.com/"><img alt="Checkr" src="https://railsconf-test.s3.amazonaws.com/uploads/Checkr-Acorn.png"></a>
-                <a target="_blank" href="https://liveramp.com/"><img alt="LiveRamp" src="https://railsconf-test.s3.amazonaws.com/uploads/NEW_LR_logo.png"></a>
-                <a target="_blank" href="https://www.engineyard.com/"><img alt="Engine Yard" src="https://railsconf-test.s3.amazonaws.com/uploads/EY_logo_vector_-_top_space_cropped.png"></a>
-                <a target="_blank" href="https://nationbuilder.com/jobs"><img alt="NationBuilder" src="https://railsconf-test.s3.amazonaws.com/uploads/nationbuilder-horizontal-black.png"></a>
+                :-)
               </div>
             </div>
             <div id="bronze-sponsors" class="list">
               <h3 class="animation" data-animation="fadeInUp" data-animation-delay="0.8"><em>Bronze</em></h3>
               <div class="animation" data-animation="fadeInUp" data-animation-delay="0.9">
-                <a target="_blank" href="https://www.cyndx.net"><img alt="Cyndx" src="https://railsconf-test.s3.amazonaws.com/uploads/Cyndx_logo_cropped.png"></a>
-                <a target="_blank" href="https://www.braintreepayments.com/"><img alt="Braintree" src="https://railsconf-test.s3.amazonaws.com/uploads/Braintree-footer-grey-bkgd.png"></a>
-                <a target="_blank" href="https://www.datadoghq.com/"><img alt="Datadog" src="https://railsconf-test.s3.amazonaws.com/uploads/dd_logo_transparentbg-400x400__1_.png"></a>
-                <a target="_blank" href="https://www.stitchfix.com/"><img alt="Stitch Fix" src="https://railsconf-test.s3.amazonaws.com/uploads/Stitch_Fix_logo_cropped_footer.png"></a>
-                <a target="_blank" href="https://www.flexport.com/"><img alt="Flexport" src="https://railsconf-test.s3.amazonaws.com/uploads/Black_Flexport.png"></a>
-                <a target="_blank" href="https://docs.connect.squareup.com/payments/sqpaymentform/overview"><img alt="Square" src="https://railsconf-test.s3.amazonaws.com/uploads/Dev-Horizontal-White.png"></a>
-                <a target="_blank" href="https://www.coupa.com/"><img alt="Coupa" src="https://railsconf-test.s3.amazonaws.com/uploads/coupa_cropped.png"></a>
+                :-)
               </div>
             </div>
           </div>
