@@ -339,7 +339,7 @@ h6,
     background: image-url('chico_collage.png')
       right bottom no-repeat;
     background-size: 1170px auto;
-    padding: 0 0 400px 0;
+    padding: 0 0 475px 0;
   }
 }
 
@@ -509,9 +509,132 @@ h6,
   }
 }
 
+/*===================================*
+09. SCHEDULE
+*===================================*/
+#schedule {
+  height: 100%;
+  .outer-container {
+    background: radial-gradient(
+        ellipse farthest-side at 100% 100%,
+        rgba(90, 46, 123, 0.9) 20%,
+        rgba(146, 71, 162, 0.9) 50%,
+        rgba(102, 102, 187, 0.9) 110%
+      ),
+      image-url("clock.jpg")
+        center center no-repeat;
+
+    background-size: auto, 100%, 100% auto;
+
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .container {
+    padding-top: 75px;
+  }
+  h2.title {
+    font-family: "Fjalla One";
+    text-transform: uppercase;
+    font-size: 48px;
+    // color: #ff88ab;
+    // color: $green;
+    // padding: 0 0 10px 0;
+    // margin: 0;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 1.2em;
+    font-weight: 700;
+    color: $primary-color;
+  }
+}
+
+.nc-schedule {
+  margin: 4em auto;
+  
+  td {
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    padding: 2em 1.5em;
+  }
+  td:first-child {
+    border-left: none;
+  }
+  td:last-child {
+    border-right: none;
+  }
+}
+
+.schedule-time {
+  font-family: "Fjalla One";
+    font-size: 24px;
+    color: $primary-color;
+    text-align: right;
+  strong {
+    font-weight: 400;
+    diplay: block;
+  }
+  small {
+    display: block;
+    font-size: 16px;
+    // color: #7c6878;
+    color: rgba(150, 150, 150, 0.9);
+  }
+}
+
+.schedule-details {
+  position: relative;
+  .schedule-title {
+    font-size: 16px;
+    line-height: 22px;
+    display: block;
+  }
+  .track-circle {
+    border-color: #43C1E6;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: -30px;
+    top: 20px;
+    background: #343a40;
+    border-radius: 11px;
+    border: 2px solid #F1F1F1;
+    border: 2px solid #43C1E6;
+    border: 2px solid $green;
+    display: block;
+  }
+  .fa-track-circle {
+    position: absolute;
+    left: -38px;
+    top: 20px;
+    background: $primary-color;
+    color: #343a40;
+    display: block;
+    width: 25px;
+    border-radius: 25px;
+    text-align: center;
+  }
+  .schedule-speaker {
+    font-size: 16px;
+    padding-top: 3px;
+    color: rgba(200, 200, 200, 0.9);
+    font-weight: 400;
+  }
+  .schedule-special-container {
+    // border: 1px solid rgba(100, 100, 100, 0.5);
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 5px;
+    padding: 1em;
+  }
+  .special-label {
+    display: block;
+    text-transform: uppercase;
+    font-family: "Fjalla One";
+    font-size: 18px;
+  }
+}
+
 
 /*===================================*
-09. FOOTER
+10. FOOTER
 *===================================*/
 
 #site-footer {
