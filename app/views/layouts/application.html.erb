@@ -28,6 +28,8 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= favicon_link_tag asset_path('logo.png') %>
   </head>
 
   <body>
@@ -66,13 +68,13 @@
               <a class="nav-link animated fadeInDown" href="/schedule">Schedule</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link animated fadeInDown" href="../index#about">About</a>
+              <%= link_to "About", index_path(anchor: "about"), class: "nav-link animated fadeInDown"%>
             </li>
             <li class="nav-item">
-              <a class="nav-link animated fadeInDown" href="../index#location">Location</a>
+              <%= link_to "Location", index_path(anchor: "location"), class: "nav-link animated fadeInDown"%>
             </li>
             <li class="nav-item">
-              <a class="nav-link animated fadeInDown" href="../index#sponsors">Sponsors</a>
+              <%= link_to "Sponsors", index_path(anchor: "sponsors"), class: "nav-link animated fadeInDown"%>
             </li>
           </ul>
         </div>
