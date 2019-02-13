@@ -316,7 +316,7 @@ h6,
     }
   }
 }
-/* On screens that are 600px or less, set the background color to blue */
+/* On screens that are 600px or less */
 @media only screen and (max-width: 600px) {
   #location {
     height: auto;
@@ -340,6 +340,24 @@ h6,
       right bottom no-repeat;
     background-size: 1170px auto;
     padding: 0 0 475px 0;
+  }
+
+  .bg {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #special {
+    padding-left: 0;
+    padding-right: 0;
+    .bg-container {
+      background: none;
+      padding: 0;
+    }
+    .bg {
+      visibility: visible;
+    }
   }
 }
 
@@ -379,6 +397,14 @@ h6,
     margin: 0;
     font-weight: 400;
     // display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #sponsors {
+    .bg-container {
+      padding: 0 0 250px 0;
+    }
   }
 }
 
