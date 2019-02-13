@@ -3,6 +3,7 @@
 #                    Prefix Verb URI Pattern                                                                              Controller#Action
 #                      root GET  /                                                                                        welcome#index
 #                     index GET  /index(.:format)                                                                         welcome#index
+#                  schedule GET  /schedule(.:format)                                                                      welcome#schedule
 #                  speakers GET  /speakers(.:format)                                                                      speakers#index
 #            speakers_index GET  /speakers/index(.:format)                                                                speakers#index
 #             speakers_2018 GET  /speakers/2018(.:format)                                                                 speakers#speakers_2018
