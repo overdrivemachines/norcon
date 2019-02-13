@@ -27,7 +27,7 @@
 // http://innovationplans.com/themeforest/sodic/
 // https://www.cssfilters.co/
 // http://xerotheme.com/keyra/01_theme/html/index.html
-$(function() {
+$(document).on('turbolinks:load', function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 200) {
       $("#back-to-top").fadeIn();
@@ -92,6 +92,7 @@ $(function() {
 
   ckScrollInit($(".animation"));
   
+ 
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -127,4 +128,5 @@ $(function() {
       }
     }
   });
+
 });
