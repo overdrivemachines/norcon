@@ -357,6 +357,10 @@ h6,
     }
     .bg {
       visibility: visible;
+      width: 100%;
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
