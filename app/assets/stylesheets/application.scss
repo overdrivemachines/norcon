@@ -697,3 +697,17 @@ h6,
   border-radius: 4px;
   display: none;
 }
+
+// :target:before {
+//   content:"";
+//   display:block;
+//   height:190px;  fixed header height
+//   margin:-190px 0 0; /* negative fixed header height */
+// }
+
+// :target {
+//   display: block;
+//   position: relative;
+//   top: -120px; 
+//   visibility: hidden;
+// }
