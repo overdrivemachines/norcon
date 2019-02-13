@@ -35,7 +35,7 @@
   <body>
     <header id="site-header" class="fixed-top">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand animated fadeInDown" href="#home">
+        <%= link_to index_path(anchor: "home"), class: "navbar-brand animated fadeInDown" do %>
           <div>
             <%= image_tag("logo.png", height: '64') %>
           </div>
@@ -43,7 +43,7 @@
             <h1>Norcon Chico</h1>
             <small>April 13, 2019</small>
           </div>
-        </a>
+        <% end %>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,7 +51,10 @@
         <div class="collapse navbar-collapse" id="navbar-content">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"> <!-- add active class -->
-              <a class="nav-link animated fadeInDown" href="../index#home">Home <span class="sr-only">(current)</span></a>
+              <%= link_to index_path(anchor: "home"), class: "nav-link animated fadeInDown" do %>
+                Home <span class="sr-only">(current)</span>
+              <% end %>
+              <!-- <a class="nav-link animated fadeInDown" href="../index#home">Home <span class="sr-only">(current)</span></a> -->
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle animated fadeInDown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,9 +67,9 @@
                 <%= link_to "2017 Speakers", speakers_2017_path, class: "dropdown-item" %>
               </div>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link animated fadeInDown" href="/schedule">Schedule</a>
-            </li> -->
+            <li class="nav-item">
+              <%= link_to "Schedule", schedule_path, class: "nav-link animated fadeInDown"%>
+            </li>
             <li class="nav-item">
               <%= link_to "About", index_path(anchor: "about"), class: "nav-link animated fadeInDown"%>
             </li>
@@ -95,21 +98,20 @@
             </address>
           </div>
           <div class="col-md-2 col-sm-12 text-center">
-            <a href="index#home">
+            <%= link_to index_path(anchor: "home") do %>
               <%= image_tag("logo.png", height: '92') %>
-            </a>
+            <% end %>
           </div>
           <div class="text-center">
             <div class="info">
               <div>© 2019 Copyright Norcon <a href="mailto:info@raidatech.com">info@chicostart.com</a></div>
             </div>
             <nav>
-              <a href="/">Home</a>
-              <a href="speakers">Speakers</a>
-              <a href="schedule">Schedule</a>
-              <a href="index#location">Location</a>
-              <a href="index#sponsors">Sponsors</a>
-              <a href="mailto:info@chicostart.com">Contact</a>
+              <%= link_to "Home", index_path(anchor: "home") %>
+              <%= link_to "Speakers", speakers_index_path %>
+              <%= link_to "Schedule", schedule_path %>
+              <%= link_to "Location", index_path(anchor: "location") %>
+              <%= link_to "Sponsors", index_path(anchor: "sponsors") %>
             </nav>
             <div class="info">
               <div>Website Designed by <a href="https://github.com/overdrivemachines">Dipen Chauhan</a></div>
