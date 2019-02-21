@@ -57,10 +57,19 @@
               <!-- <a class="nav-link animated fadeInDown" href="../index#home">Home <span class="sr-only">(current)</span></a> -->
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle animated fadeInDown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle animated fadeInDown" href="#" id="navbar-get-involved" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved</a>
+              <div class="dropdown-menu" aria-labelledby="navbar-get-involved">
+                <a href="#" class="dropdown-item">Speaker Sign Up</a>
+                <a href="#" class="dropdown-item">Volunteer Sign Up</a>
+                <a href="#" class="dropdown-item">Workshop Sign Up</a>
+                <a href="#" class="dropdown-item">Sponsor Sign Up</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle animated fadeInDown" href="#" id="navbar-speakers" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Speakers
-            </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbar-speakers">
                 <%= link_to "Current Speakers", speakers_index_path, class: "dropdown-item" %>
                 <div class="dropdown-divider"></div>
                 <%= link_to "2018 Speakers", speakers_2018_path, class: "dropdown-item" %>
