@@ -7,4 +7,7 @@ class SpeakersController < ApplicationController
 
   def speakers_2017
   end
+
+  def speakers_2016
+  end
 end
