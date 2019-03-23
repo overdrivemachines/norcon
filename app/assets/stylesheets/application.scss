@@ -576,10 +576,51 @@ h6,
     font-weight: 700;
     color: $primary-color;
   }
+  h3.sub-title {
+    font-family: "Fjalla One";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $primary-color;
+    margin-top: 1.6em;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  h3.sub-title span {
+    font-weight: 400;
+    padding-bottom: 15px;
+    font-size: 40px;
+  }
+
+  .party-container {
+    // display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+    padding: 2em;
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    h3, p {
+      text-align: center;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    p.party-time {
+      font-family: "Fjalla One";
+      text-transform: uppercase;
+    }
+    p.note {
+      margin-top: 0.5em;
+      font-size: 14px;
+    }
+  }
 }
 
 .nc-schedule {
-  margin: 4em auto;
+  margin: 3em auto;
   
   td {
     border: 1px solid rgba(100, 100, 100, 0.5);
@@ -707,7 +748,7 @@ h6,
 
   a {
     // color: rgba(255, 255, 255, 0.9);
-    padding: 1em;
+    padding: 1em 0.5em;
   }
 }
 
