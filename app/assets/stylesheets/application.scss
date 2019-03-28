@@ -537,6 +537,11 @@ h6,
     a:hover {
       color: $green;
     }
+
+    em {
+      text-decoration: underline;
+      font-style: normal;
+    }
   }
 }
 
