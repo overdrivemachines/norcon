@@ -483,9 +483,9 @@ h6,
   .outer-container {    
     background: radial-gradient(
         ellipse farthest-side at 100% 100%,
-        rgba(90, 46, 123, 0.9) 20%,
-        rgba(146, 71, 162, 0.9) 50%,
-        rgba(102, 102, 187, 0.9) 110%
+        rgba(90, 46, 123, 0.4) 20%,
+        rgba(146, 71, 162, 0.4) 50%,
+        rgba(102, 102, 187, 0.4) 110%
       ),
       image-url('business_meeting.jpg')
         center center no-repeat;
@@ -565,6 +565,14 @@ h6,
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .speaker {
+    padding: 1em;
+  }
+}
+
+
+
 /*===================================*
 09. SCHEDULE
 *===================================*/
@@ -573,9 +581,9 @@ h6,
   .outer-container {
     background: radial-gradient(
         ellipse farthest-side at 100% 100%,
-        rgba(90, 46, 123, 0.9) 20%,
-        rgba(146, 71, 162, 0.9) 50%,
-        rgba(102, 102, 187, 0.9) 110%
+        rgba(90, 46, 123, 0.4) 20%,
+        rgba(146, 71, 162, 0.4) 50%,
+        rgba(102, 102, 187, 0.4) 110%
       ),
       image-url("clock.jpg")
         center center no-repeat;
@@ -862,6 +870,7 @@ h6,
 *===================================*/
 #spop--cod {
   max-width: 225px;
+  background: #313131;
 }
 .notification-inner {
   text-align: center;
