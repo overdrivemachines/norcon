@@ -144,7 +144,7 @@ function time() {
 
 function notification() {
   spop({
-    template: '<div class="qr-notification d-flex align-items-center"><div class="notification-inner"><img src="qr.png" width="128" alt="Scan this"><p>Scan the above code to start the Crypto Scavenger Hunt</p></div></div>',
+    template: '<div class="qr-notification d-flex align-items-center"><div class="notification-inner"><img src="/qr.png" width="128" alt="Scan this"><p>Scan the above code to start the Crypto Scavenger Hunt</p></div></div>',
     group: 'cod',
     style: 'nav-fixed',// error or success
     position: 'bottom-left',
