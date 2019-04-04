@@ -128,5 +128,30 @@ $(document).on('turbolinks:load', function() {
       }
     }
   });
-
 });
+
+
+
+/*===================================*
+SPOP JS
+*===================================*/
+// var times = [3120, 4442, 5224, 7510, 8636, 16002, 17222];
+var times = [4000, 4400, 4500, 5000, 5120, 5120, 5120];
+var myInterval = setInterval('notification()', time());
+function time() {
+    return times[parseInt(Math.random()*7)] + 5000;
+}
+
+function notification() {
+  spop({
+    template: '<div class="qr-notification d-flex align-items-center"><div class="notification-inner"><img src="qr.png" width="128" alt="Scan this"><p>Scan the above code to start the Crypto Scavenger Hunt</p></div></div>',
+    group: 'cod',
+    style: 'nav-fixed',// error or success
+    position: 'bottom-left',
+    autoclose: 4000,
+    icon: false
+  });
+  clearInterval(myInterval);
+  myInterval = setInterval('notification()', time());
+}
+

@@ -19,6 +19,7 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "animate.min";
+@import "spop";
 
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600");
@@ -855,3 +856,20 @@ h6,
 //   top: -120px; 
 //   visibility: hidden;
 // }
+
+/*===================================*
+11. NOTIFICATION
+*===================================*/
+#spop--cod {
+  max-width: 225px;
+}
+.notification-inner {
+  text-align: center;
+  p {
+    font-size: 14px;
+    margin-top: 1em;
+    text-align: left;
+    line-height: 1.6em;
+    color: $light-yellow;
+  }
+}
