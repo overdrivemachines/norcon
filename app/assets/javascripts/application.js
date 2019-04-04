@@ -136,7 +136,7 @@ $(document).on('turbolinks:load', function() {
 SPOP JS
 *===================================*/
 // var times = [3120, 4442, 5224, 7510, 8636, 16002, 17222];
-var times = [4000, 4400, 4500, 5000, 5120, 5120, 5120];
+var times = [4000, 4400, 4500, 5000, 6120, 6120, 6120];
 var myInterval = setInterval('notification()', time());
 function time() {
     return times[parseInt(Math.random()*7)] + 5000;
