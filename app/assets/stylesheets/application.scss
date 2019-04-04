@@ -568,6 +568,7 @@ h6,
 @media only screen and (max-width: 767px) {
   .speaker {
     padding: 1em;
+    flex-direction: column-reverse;
   }
 }
 
