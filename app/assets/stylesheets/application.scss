@@ -569,6 +569,10 @@ h6,
   .speaker {
     padding: 1em;
     flex-direction: column-reverse;
+
+    .info h2 {
+      margin-top: 1em;
+    }
   }
 }
 
