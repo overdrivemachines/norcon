@@ -873,3 +873,9 @@ h6,
     color: $light-yellow;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .spop-container {
+    display: none;
+  }
+}
