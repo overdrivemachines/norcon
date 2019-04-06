@@ -6,16 +6,34 @@
           <h1><%= image_tag("logo-fancy.png", height: '50') %></h1>
           <h2>Chico</h2>
           <h3>April 13, 2019</h3>
-          <%= image_tag("logo.png", height: '256') %>
-          <div class="chevron-outer">
+          <%= image_tag("logo.png", height: '128') %>
+          <!-- <div class="chevron-outer">
             <div class="chevron-inner">
               <div class="chevron"></div>
               <div class="chevron"></div>
               <div class="chevron"></div>
               <span class="text">Scroll down</span>
             </div>
-          </div>
+          </div> -->
+          <h6 class="mt-4">Sponsored by</h6>
+          
         </div>
+        <div class="sponsors-container">
+
+          <a target="_blank" href="https://coastalbusinesssystems.com/">
+            <%= image_tag "sponsors/cbs_logo.jpg", alt: "Coastal Business Systems" %>
+          </a>
+          <a target="_blank" href="http://www.sharp-world.com/aquos/en/">
+            <%= image_tag "sponsors/sharp_aquos_logo.png", alt: "Sharp Aquos" %>
+          </a>
+          <a target="_blank" href="http://www.butte.edu/">
+            <%= image_tag "sponsors/dark_butte_college_logo.png", alt: "Butte College" %>
+          </a>
+          <a target="_blank" href="https://www.rabobankamerica.com/">
+            <%= image_tag "sponsors/dark_rabobank_logo.png", alt: "Rabobank" %>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
