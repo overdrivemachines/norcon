@@ -89,7 +89,7 @@ section {
   section {
     margin-top: 2em;
     margin-bottom: 2em;
-  }  
+  }
 }
 
 // Most of the Smartphones Mobiles (Portrait 320px to 479px)
@@ -394,6 +394,9 @@ h6,
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  #home {
+    padding-bottom: 0;
+  }
   #home .challenge {
     display: block;
   }
