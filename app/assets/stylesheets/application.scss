@@ -387,6 +387,17 @@ h6,
   }
 }
 
+#home .challenge {
+  display: none;
+  margin: 1em auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #home .challenge {
+    display: block;
+  }
+}
+
 /*===================================*
 04. ABOUT
 *===================================*/
