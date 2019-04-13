@@ -62,12 +62,9 @@
               </td>
               <td>
                 <div class="schedule-details">
-                  <div class="schedule-special-container">
-                    <span class="special-label">Lunch</span>
-                    <div class="fa-track-circle">
-                      <i class="fas fa-utensils fa-fw"></i>
-                    </div>
-                  </div>
+                  <%= link_to "Frute: a fuzzer/brute forcer", speakers_path(anchor: "zachary_minneker"), class: "schedule-title" %>
+                  <div class="track-circle"></div>
+                  <h4 class="schedule-speaker">Zachary Minneker</h4>
                 </div>
               </td>
             </tr>
@@ -80,9 +77,12 @@
               </td>
               <td>
                 <div class="schedule-details">
-                  <%= link_to "Frute: a fuzzer/brute forcer", speakers_path(anchor: "zachary_minneker"), class: "schedule-title" %>
-                  <div class="track-circle"></div>
-                  <h4 class="schedule-speaker">Zachary Minneker</h4>
+                  <div class="schedule-special-container">
+                    <span class="special-label">Lunch</span>
+                    <div class="fa-track-circle">
+                      <i class="fas fa-utensils fa-fw"></i>
+                    </div>
+                  </div>
                 </div>
               </td>
             </tr>
